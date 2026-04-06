@@ -8,6 +8,7 @@
   "main": "./src/main.ts",
   "scripts": {
     "app": "tsc && node --enable-source-maps --experimental-print-required-tla dist/main.js ",
+    "build": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {

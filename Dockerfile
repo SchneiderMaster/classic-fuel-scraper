@@ -13,6 +13,9 @@ COPY . .
 # Installiere Node-Abhängigkeiten
 RUN npm install
 
+# Build
+RUN npm run build
+
 # ----------------------------------------------------
 # STAGE 2: Produktions-Image (Minimal und sicher)
 # ----------------------------------------------------
