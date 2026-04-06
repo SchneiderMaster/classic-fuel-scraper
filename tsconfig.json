@@ -1,0 +1,17 @@
+{
+    "compilerOptions": {
+        "strict": true,
+        "target": "es2022",
+        "module": "nodenext",
+        "moduleResolution": "nodenext",
+        "noImplicitAny": true,
+        "noImplicitOverride": true,
+        "outDir": "dist",
+        "skipLibCheck": true,
+        "rootDir": "src",
+        "esModuleInterop": true
+    },
+    "include": [
+        "./src/**/*.ts"
+    ]
+}
