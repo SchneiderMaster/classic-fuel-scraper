@@ -55,16 +55,16 @@ const fetchPrices = async () => {
 fetchPrices();
 
 const server = createServer(async (req, res) => {
-    if (req.url === '/metrics') {
+    if (req.url === '/metrics' && req.method == 'GET') {
         res.writeHead(200, {
             'content-type': register.contentType
         });
         res.end(await register.metrics());
     }
     else {
-        res.writeHead(400)
+        res.writeHead(400);
         res.end();
     }
-})
+});
 
 server.listen(port);
