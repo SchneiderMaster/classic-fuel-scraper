@@ -2,6 +2,8 @@
 
 This is a scraper, that targets any website by Classic. It extracts all of the fuel prices it can find and exposes them as a Prometheus endpoint via `/metrics`.
 
+The process behind creating this scraper alongside an explanation of the dashboard at `dashboard/Fuel Prices-1775652181990.json` can be found on my [blog](https://fynn-schneider.com/posts/why-and-how-i-started-monitoring-my-local-fuel-prices-with-grafana/).
+
 ## How to use
 In order to use this scraper, you can simply run it via docker. Your desired fuel stations can be configured with the environment variable `FUEL_STATIONS`. This matches the last part of the URL for your fuel station website (e.g. for https://classic-oil.de/tankstellen/classic-tankstelle-hamburg/ you need `classic-tankstelle-hamburg`).
 
